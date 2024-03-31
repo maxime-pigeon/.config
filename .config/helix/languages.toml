@@ -1,0 +1,33 @@
+[[language]]
+name = "javascript"
+formatter = { command = "prettier", args = [
+  "--parser", 
+  "typescript", 
+] }
+
+[[language]]
+name = "html"
+auto-format = false
+formatter = { command = "prettier", args = ["--parser", "html"] }
+
+[[language]]
+name = "markdown"
+
+[[language]]
+name = "css"
+
+[[language]]
+name = "git-commit"
+rulers = []
+
+[[language]]
+name = "python"
+formatter = { command = "black", args = ["-"] }
+auto-format = false
+
+[[language]]
+name = "go"
+
+[[language]]
+name = "php"
+auto-format = false

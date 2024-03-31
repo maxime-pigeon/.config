@@ -1,0 +1,12 @@
+[user]
+	email = me@maximepigeon.com
+	name = Maxime Pigeon
+[init]
+	defaultBranch = main
+[http]
+	postBuffer = 157286400
+[core]
+	excludesfile = /Users/maximepigeon/.gitignore
+	editor = nvim
+[alias]
+    l = "log --oneline --all --graph"

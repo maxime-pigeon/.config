@@ -1,0 +1,71 @@
+theme = "modus_vivendi"
+
+[editor]
+gutters = []
+color-modes = true
+scroll-lines = 1
+text-width = 72
+auto-completion = false
+
+[editor.smart-tab]
+enable = false
+
+[editor.lsp]
+auto-signature-help = false
+
+[editor.whitespace]
+render = "all"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+
+[editor.soft-wrap]
+enable = true
+wrap-indicator = ""
+
+[editor.statusline]
+left = [
+  "mode", 
+  "spinner", 
+  "version-control",
+  "spacer",
+  "file-base-name",
+  "file-modification-indicator" 
+]
+right = [
+  "diagnostics", 
+  "register", 
+  "position" 
+]
+
+[editor.auto-pairs]
+"«" = "»"
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+"'" = "'"
+'`' = '`'
+'<' = '>'
+
+[keys.normal]
+i = ["insert_mode", "collapse_selection"]
+a = ["append_mode", "collapse_selection"]
+y = ["yank", ":clipboard-yank"]
+tab = ["indent"]
+S-tab = ["unindent"]
+C-e = "expand_selection"
+S-right = ["select_mode", "extend_char_right"]
+S-left = ["select_mode", "extend_char_left"]
+X = ["extend_line_above"]
+"{" = ["goto_prev_paragraph"]
+"}" = ["goto_next_paragraph"]
+
+[keys.insert]
+C-t = [
+  "extend_prev_long_word_start",
+  ":pipe emmet"
+]
+S-right = ["extend_char_right"]
+S-left = ["extend_char_left"]
