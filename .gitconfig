@@ -6,7 +6,6 @@
 [http]
 	postBuffer = 157286400
 [core]
-	excludesfile = /Users/maximepigeon/.gitignore
 	editor = nvim
 [alias]
     l = "log --oneline --all --graph"
