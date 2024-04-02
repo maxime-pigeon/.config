@@ -15,6 +15,10 @@ function gs
     git status $argv
 end
 
+function ga
+    git add $argv
+end
+
 function ccd
     mkdir $argv[1]
     and cd $argv[1]
