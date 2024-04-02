@@ -27,17 +27,17 @@ wrap-indicator = ""
 
 [editor.statusline]
 left = [
-  "mode", 
-  "spinner", 
-  "version-control",
-  "spacer",
-  "file-base-name",
-  "file-modification-indicator" 
+    "mode", 
+    "spinner", 
+    "version-control",
+    "spacer",
+    "file-base-name",
+    "file-modification-indicator" 
 ]
 right = [
-  "diagnostics", 
-  "register", 
-  "position" 
+    "diagnostics", 
+    "register", 
+    "position" 
 ]
 
 [editor.auto-pairs]
@@ -56,17 +56,12 @@ a = ["append_mode", "collapse_selection"]
 y = ["yank", ":clipboard-yank"]
 tab = ["indent"]
 S-tab = ["unindent"]
-C-e = "expand_selection"
-S-right = ["select_mode", "extend_char_right"]
-S-left = ["select_mode", "extend_char_left"]
 X = ["extend_line_above"]
 "{" = ["goto_prev_paragraph"]
 "}" = ["goto_next_paragraph"]
 
 [keys.insert]
 C-t = [
-  "extend_prev_long_word_start",
-  ":pipe emmet"
+    "extend_prev_long_word_start",
+    ":pipe emmet"
 ]
-S-right = ["extend_char_right"]
-S-left = ["extend_char_left"]
