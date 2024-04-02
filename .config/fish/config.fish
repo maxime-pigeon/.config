@@ -1,19 +1,26 @@
-# Remove greeting
-set -g fish_greeting
+set fish_greeting
+set -x EDITOR hx
+
+alias python='python3'
+
+function gl
+    git log --all --graph --oneline
+end
+
+function gc
+    git commit $argv
+end
+
+function gs
+    git status $argv
+end
 
 function ccd
     mkdir $argv[1]
-    cd $argv[1]
+    and cd $argv[1]
 end
 
-# Prompt
 function fish_prompt
-    printf "\e[6 q"  # set cursor to bar
+    printf "\e[6 q" # set cursor to bar
     printf '%s' (basename $(prompt_pwd)) (fish_git_prompt) " \$ "
 end
-
-# Aliases
-alias vi='nvim'
-alias python='python3'
-
-set -g EDITOR nvim
