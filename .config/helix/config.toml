@@ -13,8 +13,9 @@ enable = false
 [editor.lsp]
 auto-signature-help = false
 
-[editor.whitespace]
-render = "all"
+[editor.whitespace.render]
+space = "all"
+tab = "all"
 
 [editor.cursor-shape]
 insert = "bar"
