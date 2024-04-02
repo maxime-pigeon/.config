@@ -1,14 +1,13 @@
 string = { fg = "blue-warmer" }
 comment = { fg = "yellow-faint" }
-# variable = { fg = "cyan" }
 attribute = { fg = "cyan" }
 keyword = { fg = "magenta-cooler" }
-# constant = { fg = "magenta-warmer" }
-# function = { fg = "magenta" }
 tag = { fg = "magenta" }
 type = { fg = "cyan-cooler" }
+# variable = { fg = "cyan" }
+# constant = { fg = "magenta-warmer" }
+# function = { fg = "magenta" }
 
-"markup" = { fg = "fg-dim" }
 "markup.heading" = { modifiers = [ "bold" ] }
 "markup.heading.marker" = { fg = "fg-dim", modifiers = [ "bold" ]}
 "markup.heading.2" = { fg = "gold", modifiers = [ "bold" ] }
@@ -16,7 +15,8 @@ type = { fg = "cyan-cooler" }
 "markup.heading.4" = { fg = "magenta", modifiers = [ "bold" ] }
 "markup.italic" = { modifiers = [ "italic" ] }
 "markup.bold" = { modifiers = [ "bold" ] }
-"markup.raw" = { fg = "green-faint" }
+# "markup.raw" = { fg = "green-faint" }
+# "markup" = { fg = "fg-dim" }
 
 "ui.background" = { bg = "bg-dim"}
 "ui.cursor" = { fg = "bg-main", bg = "fg-main" }
@@ -35,8 +35,9 @@ type = { fg = "cyan-cooler" }
 "ui.menu.selected" = { bg = "bg-active" }
 "ui.selection" = { bg = "bg-region" }
 "ui.virtual.ruler" = { bg = "fg-dim"}
+"ui.virtual.jump-label" = { modifiers = [ "bold", "underlined" ] }
 
-"error" = { fg = "red" }
+"error" = { bg = "bg-red-intense" }
 "diagnostic.hint" = { bg = "bg-yellow-subtle" }
 "diagnostic.warning" = { bg = "bg-yellow-subtle" }
 "diagnostic.error" = { bg = "bg-red-intense", fg = "fg-main" }
