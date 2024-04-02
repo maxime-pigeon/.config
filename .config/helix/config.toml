@@ -25,6 +25,9 @@ normal = "block"
 enable = true
 wrap-indicator = ""
 
+[editor.file-picker]
+git-global = false
+
 [editor.statusline]
 left = [
     "mode", 
