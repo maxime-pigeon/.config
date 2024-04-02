@@ -7,3 +7,5 @@
 	verbose = yes
 [http]
 	postBuffer = 157286400
+[core]
+	excludesFile = ~/.config/git/ignore
