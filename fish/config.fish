@@ -1,7 +1,7 @@
-set fish_greeting
-set -x EDITOR hx
-
 alias python='python3'
+
+set fish_greeting
+set -x EDITOR kak
 
 function gl
     git log --all --graph --oneline
@@ -25,6 +25,5 @@ function ccd
 end
 
 function fish_prompt
-    printf "\e[6 q" # set cursor to bar
     printf '%s' (basename $(prompt_pwd)) (fish_git_prompt) " \$ "
 end
