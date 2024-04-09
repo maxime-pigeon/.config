@@ -1,0 +1,36 @@
+colorscheme modus
+
+set-option global modelinefmt '%val{bufname} %val{cursor_line}:%val{cursor_char_column} {{context_info}} {{mode_info}}'
+set-option global ui_options terminal_assistant=none
+
+add-highlighter global/ show-whitespaces
+
+# Expand tabs
+hook global InsertChar \t %{ exec -draft h@ }
+set global tabstop 4
+set global indentwidth 4
+
+map global insert <a-z> «
+map global insert <a-x> »
+map global insert <a-H> ·
+
+hook global WinSetOption filetype=markdown %{ autowrap-enable }
+set-option global autowrap_column 72
+set-option global autowrap_format_paragraph yes
+set-option global autowrap_fmtcmd "par"
+
+add-highlighter global/ wrap -word
+
+hook global WinSetOption filetype=python %{
+  set-option window formatcmd 'black -'
+}
+
+define-command wrap-paragraph -docstring %{
+    Wrap current paragraph with par
+} %{
+    execute-keys -draft <a-i><p><|>par<ret>
+}
+
+map global user p ':wrap-paragraph<ret>' -docstring 'wrap paragraph'
+
+set-option global autocomplete prompt
