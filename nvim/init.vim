@@ -80,6 +80,10 @@ nmap ga <Plug>(EasyAlign)
 nnoremap <leader>f :FZF<CR>
 nnoremap <leader><cr> :noh<cr>
 
+inoremap <A-H> ·
+inoremap <A-z> «
+inoremap <A-x> »
+
 let g:fzf_colors =
 \ { 'fg':         ['fg', 'Default'],
   \ 'bg':         ['bg', 'Normal'],
