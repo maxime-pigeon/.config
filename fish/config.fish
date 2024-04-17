@@ -1,7 +1,9 @@
 alias python='python3'
 
 set fish_greeting
-set -x EDITOR kak
+set -x EDITOR nvim
+
+alias vim='nvim'
 
 function gl
     git log --all --graph --oneline
