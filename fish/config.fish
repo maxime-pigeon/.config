@@ -6,7 +6,7 @@ set -x EDITOR nvim
 alias vim='nvim'
 
 function gl
-    git log --all --graph --oneline
+    git log --all --graph --oneline $argv
 end
 
 function gc
@@ -19,6 +19,10 @@ end
 
 function ga
     git add $argv
+end
+
+function gsw
+    git switch $argv
 end
 
 function ccd
