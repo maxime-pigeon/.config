@@ -36,6 +36,7 @@ end
 
 function fish_prompt
     printf '%s' (basename $(prompt_pwd)) (fish_git_prompt) " \$ "
+    printf '\033[0 q' # resets cursor to bar
 end
 
 set -x FZF_DEFAULT_COMMAND 'fd --type f --strip-cwd-prefix'
