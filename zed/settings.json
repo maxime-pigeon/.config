@@ -1,0 +1,71 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "cursor_blink": false,
+  "vim_mode": true,
+  "features": { "inline_completion_provider": "none", "copilot": false },
+  "show_completion_documentation": true,
+  "show_signature_help_after_edits": false,
+  "hover_popover_enabled": false,
+  "scrollbar": {
+    "show": "system",
+    "cursors": false,
+    "git_diff": false
+  },
+  "gutter": {
+    "folds": false,
+    "line_numbers": true,
+    "code_actions": false,
+    "runnables": false
+  },
+  "use_system_path_prompts": false,
+  "indent_guides": { "enabled": false },
+  "project_panel": { "button": false, "git_status": false },
+  "outline_panel": { "button": false },
+  "assistant": { "enabled": false, "version": "2" },
+  "chat_panel": { "button": false },
+  "notification_panel": { "button": false },
+  "collaboration_panel": { "button": false },
+  "current_line_highlight": "none",
+  "buffer_line_height": { "custom": 1.75 },
+  "theme": "Gruvbox Dark Hard",
+  "buffer_font_size": 13.5,
+  "buffer_font_family": "SF Mono",
+  "preferred_line_length": 80,
+  "show_inline_completions": false,
+  "ui_font_size": 15,
+  "ui_font_family": "SF Pro",
+  "toolbar": {
+    "breadcrumbs": false,
+    "quick_actions": false,
+    "selections_menu": false
+  },
+  "tab_bar": { "show": true, "show_nav_history_buttons": false },
+  "terminal": {
+    "button": false,
+    "line_height": "standard",
+    "shell": { "program": "fish" },
+    "blinking": "off",
+    "env": { "GIT_EDITOR": "zed --wait" }
+  },
+  "git": {
+    "inline_blame": { "enabled": false },
+    "git_gutter": "hide"
+  },
+  "file_types": { "HTML": ["tmpl"] },
+  "languages": {
+    "JavaScript": { "tab_size": 4 },
+    "TypeScript": { "tab_size": 4 },
+    "Markdown": { "tab_size": 4, "wrap_guides": [72] },
+    "HTML": { "formatter": "prettier" },
+    "PHP": {
+      "language_servers": ["intelephense", "!phpactor"]
+    }
+  }
+}
