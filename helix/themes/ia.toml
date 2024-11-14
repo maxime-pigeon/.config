@@ -1,0 +1,63 @@
+string = { fg = "blue" }
+comment = { fg = "yellow" }
+keyword = { fg = "purple" }
+operator = { fg = "purple" }
+tag = { fg = "purple" }
+type = { modifiers = [ "italic" ] }
+function = { fg = "fg" }
+variable = { fg = "fg" }
+constant = { fg = "green" }
+
+"markup.heading" = { modifiers = [ "bold" ] }
+"markup.italic" = { modifiers = [ "italic" ] }
+"markup.raw.inline" = { bg = "system_gray6" }
+
+"ui.background" = { fg = "fg", bg = "bg" }
+"ui.selection" = { bg = "system_white", fg = "bg" }
+"ui.selection.primary" = { bg = "system_gray5" }
+"ui.statusline" = { fg = "fg", bg = "system_gray4" }
+"ui.cursor.match" = { underline = { style = "line", color = "system_white" } }
+"ui.statusline.inactive" = { fg = "system_gray4", bg = "system_gray3" }
+"ui.text" = { fg = "fg" }
+"ui.text.inactive" = { fg = "fg" }
+"ui.text.info" = { fg = "fg" }
+"ui.popup" = { fg = "fg" }
+"ui.help" =  { fg = "fg" }
+"ui.menu" = { fg = "fg", bg = "system_gray4" }
+"ui.menu.selected" = { bg = "system_gray1", fg = "bg" }
+
+"error" = { fg = "system_red" }
+"warning" = "system_yellow"
+"hint" = "system_cyan"
+"diagnostic" = { underline = { color = "system_red", style = "line" } }
+"diagnostic.error" = { underline = { color = "system_red", style = "line" } }
+"diagnostic.warning" = { underline = { color = "system_red", style = "line" } }
+"diagnostic.hint" = { underline = { color = "system_red", style = "line" } }
+
+[palette]
+"fg" = '#cccccc'
+"bg" = '#1b1b1b'
+"red" = '#cd896c'
+"blue" = '#829ebf'
+"yellow" = '#ba9559'
+"purple" = '#b38fb0'
+"green" = '#88a273'
+"system_gray1" = "#AEAEB2"
+"system_gray2" = "#7C7C80"
+"system_gray3" = "#545456"
+"system_gray4" = "#444446"
+"system_gray5" = "#363638"
+"system_gray6" = "#242426"
+"system_white" = "#FFFFFF"
+"system_red" = "#FF453A"
+"system_orange" = "#FF9F0A"
+"system_yellow" = "#FFD60A"
+"system_green" = "#32D74B"
+"system_mint" = "#66D4CF"
+"system_teal" = "#6AC4DC"
+"system_cyan" = "#5AC8FA"
+"system_blue" = "#0A84FF"
+"system_indigo" = "#5E5CE6"
+"system_purple" = "#BF5AF2"
+"system_pink" = "#FF375F"
+"system_brown" = "#AC8E68"

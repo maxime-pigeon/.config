@@ -1,0 +1,14 @@
+-- vim.opt.foldmethod = 'expr'
+-- vim.opt.foldtext   = 'v:lua.vim.fn.getline(v:foldstart) .. "…"'
+-- vim.opt.fillchars  = 'fold: '
+-- vim.opt.foldexpr   = "(getline(v:lnum)=~'^$')?-1:((indent(v:lnum)<indent(v:lnum+1))?('>'.indent(v:lnum+1)):indent(v:lnum))"
+--
+-- vim.keymap.set('n', '<tab>', 'za')
+--
+-- vim.api.nvim_create_autocmd({ 'BufWinLeave' }, {
+--     command = 'mkview'
+-- })
+--
+-- vim.api.nvim_create_autocmd({ 'BufWinEnter' }, {
+--     command = 'silent! loadview'
+-- })

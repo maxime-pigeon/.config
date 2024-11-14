@@ -1,0 +1,18 @@
+{"signed_in":false,"milliseconds_since_first_event":0,"type":"Extension","extension_id":"github-dark-default","version":"0.0.1"}
+{"signed_in":false,"milliseconds_since_first_event":0,"type":"Extension","extension_id":"github-theme","version":"0.0.2"}
+{"signed_in":false,"milliseconds_since_first_event":0,"type":"Extension","extension_id":"macos-classic","version":"0.0.7"}
+{"signed_in":false,"milliseconds_since_first_event":0,"type":"Setting","setting":"theme","value":"One Dark"}
+{"signed_in":false,"milliseconds_since_first_event":0,"type":"Setting","setting":"keymap","value":"VSCode"}
+{"signed_in":false,"milliseconds_since_first_event":0,"type":"App","operation":"open"}
+{"signed_in":false,"milliseconds_since_first_event":0,"type":"Editor","operation":"open","file_extension":"py","vim_mode":false,"copilot_enabled":false,"copilot_enabled_for_language":true}
+{"signed_in":true,"milliseconds_since_first_event":14545,"type":"Editor","operation":"open","file_extension":"json","vim_mode":false,"copilot_enabled":false,"copilot_enabled_for_language":true}
+{"signed_in":true,"milliseconds_since_first_event":26435,"type":"Editor","operation":"open","file_extension":"json","vim_mode":false,"copilot_enabled":false,"copilot_enabled_for_language":true}
+{"signed_in":true,"milliseconds_since_first_event":107605,"type":"Action","source":"command palette","action":"workspace: toggle vim mode"}
+{"signed_in":true,"milliseconds_since_first_event":149291,"type":"Edit","duration":1,"environment":"editor"}
+{"signed_in":true,"milliseconds_since_first_event":193315,"type":"Edit","duration":917,"environment":"editor"}
+{"signed_in":true,"milliseconds_since_first_event":207516,"type":"Editor","operation":"open","file_extension":null,"vim_mode":true,"copilot_enabled":false,"copilot_enabled_for_language":true}
+{"signed_in":true,"milliseconds_since_first_event":239933,"type":"Memory","memory_in_bytes":195133440,"virtual_memory_in_bytes":465147576320}
+{"signed_in":true,"milliseconds_since_first_event":239933,"type":"Cpu","usage_as_percentage":6.585446,"core_count":8}
+{"signed_in":true,"milliseconds_since_first_event":278062,"type":"Action","source":"command palette","action":":Explore"}
+{"signed_in":true,"milliseconds_since_first_event":281930,"type":"Action","source":"command palette","action":":Explore"}
+{"signed_in":true,"milliseconds_since_first_event":284339,"type":"Action","source":"command palette","action":":Explore"}

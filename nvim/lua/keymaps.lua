@@ -1,0 +1,16 @@
+vim.g.mapleader = ' '
+
+vim.keymap.set('i', '<A-H>', '·')
+vim.keymap.set('i', '<A-z>', '«')
+vim.keymap.set('i', '<A-x>', '»')
+vim.keymap.set('i', '<A-->', '–')
+vim.keymap.set('i', '<A-_>', '—')
+vim.keymap.set('x', 'ga', ':EasyAlign<cr>')
+vim.keymap.set('n', 'ga', ':EasyAlign<cr>')
+vim.keymap.set('n', '<leader>f', ':silent Telescope find_files<cr>', { silent = true })
+-- vim.keymap.set('n', '<leader>fe', ':Telescope diagnostics<cr>')
+vim.keymap.set('n', '<leader><cr>', ':noh<cr>', { silent = true })
+vim.keymap.set('n', '<leader>r', vim.lsp.buf.rename)
+vim.keymap.set('n', '<leader>t', require('conform').format)
+vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float)
+vim.keymap.set('n', '<leader>d', vim.lsp.buf.definition)

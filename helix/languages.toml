@@ -1,20 +1,30 @@
 [[language]]
 name = "javascript"
-formatter = { command = "prettier", args = [
-  "--parser", 
-  "typescript", 
-] }
+formatter = { command = "deno", args = ["fmt", "--indent-width", "4", "-"] }
+auto-format = true
+
+[[language]]
+name = "typescript"
+formatter = { command = "deno", args = ["fmt", "--indent-width", "4", "-"] }
+auto-format = true
 
 [[language]]
 name = "html"
-auto-format = false
-formatter = { command = "prettier", args = ["--parser", "html"] }
+formatter = { command = "prettier", args = [
+  "--parser", "html", "--tab-width", "4"
+] }
+auto-format = true
 
 [[language]]
 name = "markdown"
+language-servers = ["ltex"]
+scope = "text.markdown"
 
 [[language]]
 name = "css"
+indent = { tab-width = 4, unit = "\t" }
+formatter = { command = "prettier", args = ["--parser", "css"] }
+auto-format = true
 
 [[language]]
 name = "git-commit"
@@ -22,12 +32,18 @@ rulers = []
 
 [[language]]
 name = "python"
+language-servers = ["pyright"]
 formatter = { command = "black", args = ["-"] }
-auto-format = false
+auto-format = true
 
 [[language]]
 name = "go"
+auto-format = true
 
 [[language]]
 name = "php"
-auto-format = false
+auto-format = true
+
+[language-server.pyright]
+command = "pyright-langserver"
+args = ["--stdio"]
